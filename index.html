@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Hate You Give</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <p>The Hate You Give - Choices</p>
+    <a onclick="restart()" id="restartButton">RESTART</a>
+    <hr>
+    <div id="Scene0">
+      <h1>Welcome to the game.. Ready to play?</h1>
+      <button type="button" name="startButton" onclick="changeSceneTo(1)"><span>Start</span></button>
+    </div>
+
+    <div id="Scene1" class="hiddenScene scenes">
+      <h2>How To Play</h2>
+      <p>This game will compare the choices you make with the choices Starr made in the book.</p>
+      <p>If I get around to it, there will be different paths you can take that will show and compare alternative outcomes for the book.</p>
+      <button type="button" name="startButton" onclick="changeSceneTo(2)"><span>Begin Story</span></button>
+    </div>
+
+    <div id="Scene2" class="hiddenScene scenes">
+      <h2>will you go to the party?</h2>
+      <p>Kenya comes up and asks if you want to go to Big Mav's party. You know there's always drinking, but Kenya is persistent and maybe an extended social life would be a positive.</p>
+      <p>What will you do?</p>
+      <button type="button" name="startButton" onclick="changeSceneTo(3)"><span>Go Party</span></button>
+      <button type="button" name="startButton" onclick="changeSceneTo(4)"><span>Stay Home</span></button>
+    </div>
+
+    <div id="Scene3" class="hiddenScene scenes">
+      <h2>you're at the party</h2>
+      <p>You go to the party with Kenya. After she gets into a bickering match, shots go off. You're with Khalil, and he says he can give you a ride home.</p>
+      <button type="button" name="startButton" onclick="changeSceneTo(5)"><span>Walk Home</span></button>
+      <button type="button" name="startButton" onclick="changeSceneTo(6);"><span>Go With Khalil</span></button>
+    </div>
+
+    <div id="Scene4" class="hiddenScene scenes">
+      <h2>you chose to stay home</h2>
+      <p>You see DeVante's brother was shot on the news.</p>
+      <p>Khalil texts you the next day, he say Kenya get into a fight and wants to know if she's okay. He got home safe.</p>
+      <p><i>Character; This is not the decision Starr made. Maybe if Starr had stayed home, Khalil wouldn't have reached into the car and talked to Starr.</i></p>
+      <button type="button" name="startButton" onclick="changeSceneTo(2)"><span>Go Back</span></button>
+    </div>
+
+    <div id="Scene5" class="hiddenScene scenes">
+      <h2>you're walking home</h2>
+      <p>The way home is chili, and farther than you remember. Seven's hoodie may protect your upper half, but your legs are freezing.</p>
+      <p>You're so focused on getting home you don't notice Khalil pull up beside you. "Want a ride now?" he asks.</p>
+      <p>"Where you following me?" You aks with a slight grin.</p>
+      <p>"I didn't feel right letting you freeze, so maybe I did, maybe I didn't."</p>
+      <p>A cop pulls up behind Khalil's car with his lights on.</p>
+      <button type="button" name="startButton" onclick="changeSceneTo(8)"><span>Continue..</span></button>
+    </div>
+
+    <div id="Scene6" class="hiddenScene scenes">
+      <h2>in the car with khalil</h2>
+      <p>"I wonder if everyone is okay.." you say to Khalil, your brows are scruntched up as you look at your now wrinkled Wilson High outfit.</p>
+      <p>"I'm sure they're-"</p>
+      <p>...</p>
+      <p>"Get out of the car! Hands on the roof, visible!"</p>
+      <p>...</p>
+      <p>"Put your hands back on the car Khalil! PLEASE!"</p>
+      <p>...</p>
+      <p>POW POW POW</p>
+      <p>...</p>
+      <p>You hold Khalil in your arms as he passes..</p>
+      <button type="button" name="startButton" onclick="changeSceneTo(7)"><span>Continue..</span></button>
+    </div>
+
+    <div id="Scene7" class="hiddenScene scenes">
+      <h2>khalil was shot</h2>
+      <p><i>Knowledge/Character/Commitment; Starr remembers "the talk" with her dad, and knows what to do to keep herself safe. She wants to keep Khalil safe too, but he must not have had "the talk".</i></p>
+      <button type="button" name="startButton" onclick="changeSceneTo(10)"><span>Continue..</span></button>
+    </div>
+
+    <div id="Scene8" class="hiddenScene scenes">
+      <h2>walking home continued...</h2>
+      <p>"Is this young man causing you any trouble, miss?" The cop asks you, not even looking at Khalil as he groans and throws a dirty look.</p>
+      <p>I pull my hands out of my pockets and put them at my side. "No, sir. He's just giving me a ride home."</p>
+      <p>"Where's home?"</p>
+      <p>"Just around the block. Then he lives just 2 blocks from there."</p>
+      <p>"I'll escort you home, then. There was a shooting near by."</p>
+      <p>Khalil would've been angry at the escort, but he was instead more concerned about who could have been hurt.</p>
+      <p>You both get home safely. This is not what happened in the book, however.</p>
+      <button type="button" name="startButton" onclick="changeSceneTo(3)"><span>Go Back</span></button>
+    </div>
+
+    <div id="Scene9" class="hiddenScene scenes">
+      <h2>Knowledge, Character, Commitment..</h2>
+      <p>Starr demonstrates her knowledge of how to deal with the police in her behavior, and how she advises Khalil. Despite her attempts to help keep him safe however (demonstrating her character), he is still shot and killed.</p>
+      <button type="button" name="startButton" onclick="changeSceneTo(10)"><span>Continue..</span></button>
+    </div>
+
+    <div id="Scene10" class="hiddenScene scenes">
+      <h2>the end.</h2>
+      <p>Thanks for playing...</p>
+      <button type="button" name="startButton" onclick="changeSceneTo(0)"><span>Continue..</span></button>
+    </div>
+
+  </body>
+  <script src="sceneChange.js" charset="utf-8"></script>
+</html>
